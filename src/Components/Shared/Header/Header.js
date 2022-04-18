@@ -29,6 +29,18 @@ const Header = () => {
             <NavLink className="text-decoration-none me-3 text-white" to="/usa">
               USA
             </NavLink>
+            <NavLink
+              className="text-decoration-none me-3 text-white"
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              className="text-decoration-none me-3 text-white"
+              to="/blog"
+            >
+              Blog
+            </NavLink>
           </Nav>
           <Nav>
             {user ? (

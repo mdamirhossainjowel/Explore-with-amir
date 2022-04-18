@@ -12,6 +12,8 @@ import Login from "./Components/UserMenual/Login/Login";
 import Booking from "./Components/ExploreWorld/Booking/Booking";
 import RequireAuth from "./Components/UserMenual/RequireAuth/RequireAuth";
 import PagenotFound from "./Components/PagenotFound/PagenotFound";
+import About from "./Components/About/About";
+import Blog from "./Components/Blog/Blog";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/asia" element={<Asia></Asia>}></Route>
         <Route path="/europe" element={<Europe></Europe>}></Route>
         <Route path="/usa" element={<USA></USA>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
 
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="*" element={<PagenotFound></PagenotFound>}></Route>
