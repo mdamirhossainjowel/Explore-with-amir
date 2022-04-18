@@ -48,7 +48,7 @@ const Asia = () => {
       </h1>
       <Row className="d-flex justify-content-center g-5 mt-5 mb-5">
         {countries.map((country) => (
-          <Country key={country.id} tourist={country}></Country>
+          <Country key={country.id} country={country}></Country>
         ))}
       </Row>
     </Container>
