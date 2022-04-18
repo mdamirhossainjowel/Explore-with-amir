@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBSxA5HDnyZEcEGOreMDATPTf2w9BpzVSk",
-  authDomain: "explorewithamir-9b4eb.firebaseapp.com",
-  projectId: "explorewithamir-9b4eb",
-  storageBucket: "explorewithamir-9b4eb.appspot.com",
-  messagingSenderId: "762148858581",
-  appId: "1:762148858581:web:ca7819d722df5915a6505c",
+  apiKey: "AIzaSyCbMu51KnlBPRvXs7sK65rBflUVFyGLrak",
+  authDomain: "explorewithamir-c33b7.firebaseapp.com",
+  projectId: "explorewithamir-c33b7",
+  storageBucket: "explorewithamir-c33b7.appspot.com",
+  messagingSenderId: "866298013301",
+  appId: "1:866298013301:web:bab4372d9422b49ead3a3c",
 };
 const app = initializeApp(firebaseConfig);
 
