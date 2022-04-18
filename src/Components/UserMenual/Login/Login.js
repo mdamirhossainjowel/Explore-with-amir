@@ -39,9 +39,7 @@ const Login = () => {
   if (loading) {
     console.log(loading);
   }
-  if (error) {
-    console.log(error.message);
-  }
+
   return (
     <Container className="mt-5">
       <Form onSubmit={handleSubmit} className="w-50 mx-auto ">
@@ -63,7 +61,8 @@ const Login = () => {
             placeholder="Password"
           />
         </Form.Group>
-        <p>{error?.message || error1?.message}</p>
+        {error || error1 ? <p> Error:error?.message || error1?.message</p> : ""}
+
         <Link to="/registration">new to EWA? Create Account</Link>
         <br />
         <Button variant="primary" type="submit">
