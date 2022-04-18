@@ -1,6 +1,6 @@
 # Explore With Amir
 
-Live Site [Explore With Amir](https://explorewithamir-9b4eb.web.app/).
+Live Site [Explore With Amir](https://explorewithamir-c33b7.firebaseapp.com/).
 
 ## Project Description
 
