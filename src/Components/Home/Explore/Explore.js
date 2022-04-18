@@ -1,8 +1,9 @@
 import React from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import asia from "../../../Utilities/Images/asia.jpg";
 import europ from "../../../Utilities/Images/europe.jpg";
 import usa from "../../../Utilities/Images/america.jpg";
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   return (
@@ -18,7 +19,7 @@ const Explore = () => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="info">Explore Asia</Button>
+              <Link to="/asia">Explore Asia</Link>
             </Card.Body>
           </Card>
         </Col>
@@ -32,7 +33,7 @@ const Explore = () => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Explore Europe</Button>
+              <Link to="/europe">Explore Europe</Link>
             </Card.Body>
           </Card>
         </Col>
@@ -45,7 +46,7 @@ const Explore = () => {
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Card.Text>
-              <Button variant="primary">Explore USA</Button>
+              <Link to="/usa">Explore USA</Link>
             </Card.Body>
           </Card>
         </Col>

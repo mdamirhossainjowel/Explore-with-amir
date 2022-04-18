@@ -1,82 +1,55 @@
 import React from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
-import asia from "../../../Utilities/Images/asia.jpg";
-import europ from "../../../Utilities/Images/europe.jpg";
-import usa from "../../../Utilities/Images/america.jpg";
-import { Link } from "react-router-dom";
+import Country from "../Country/Country";
+
 const USA = () => {
+  const countries = [
+    {
+      id: 1,
+      image: "https://i.ibb.co/kKbMjmZ/images-21.jpg",
+      name: "Statue Liverty",
+      days: " 2 Days",
+      Price: "25000USD per Person",
+    },
+    {
+      id: 2,
+      image: "https://i.ibb.co/k2Lq0j2/images-22.jpg",
+      name: "New York",
+      days: " 2 Days",
+      Price: "35000USD per Person",
+    },
+    {
+      id: 3,
+      image: "https://i.ibb.co/sKvK6xC/istockphoto-1145895508-2048x2048.jpg",
+      name: "Hollywood",
+      days: " 2 Days",
+      Price: "25000USD per Person",
+    },
+    {
+      id: 4,
+      image: "https://i.ibb.co/qMBJKKM/usa-best-places-san-francisco.jpg",
+      name: "Bridg",
+      days: " 2 Days",
+      Price: "25000USD per Person",
+    },
+    {
+      id: 5,
+      image: "https://i.ibb.co/k2Lq0j2/images-22.jpg",
+      name: "Night City",
+      days: " 2 Days",
+      Price: "25000USD per Person",
+    },
+  ];
   return (
     <Container className="mt-5">
       <h1 className="text-center">
         <span className="text-danger">USA</span>
       </h1>
       <Row className="d-flex justify-content-center g-5 mt-5 mb-5">
-        <Col sm lg="4">
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={asia} />
-            <Card.Body>
-              <Card.Title>Asia</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Link to="/booking">Booking</Link>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm lg="4">
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={europ} />
-            <Card.Body>
-              <Card.Title>Europe</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Link to="/booking">Booking</Link>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm lg="4">
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={usa} />
-            <Card.Body>
-              <Card.Title>United State of America</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Link to="/booking">Booking</Link>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm lg="4">
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={usa} />
-            <Card.Body>
-              <Card.Title>United State of America</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Link to="/booking">Booking</Link>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm lg="4">
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={usa} />
-            <Card.Body>
-              <Card.Title>United State of America</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-              <Link to="/booking">Booking</Link>
-            </Card.Body>
-          </Card>
-        </Col>
+        {countries.map((country) => (
+          <Country key={country.id} tourist={country}></Country>
+        ))}
       </Row>
     </Container>
   );
