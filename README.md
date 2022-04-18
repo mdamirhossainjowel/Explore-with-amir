@@ -11,3 +11,12 @@ Live Site [Explore With Amir](https://explorewithamir-c33b7.firebaseapp.com/).
 - An User Cant book a tour without Signing.
 - Our CEO is also here to say you hello.
 - And Blog Part is also here
+
+## Technology Used
+
+- React
+- React Router Dom
+- Firebase
+- React Firebase Hook
+- React Bootstrap
+- Language - JavaScript,HTML,CSS
