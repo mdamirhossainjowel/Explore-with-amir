@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   useAuthState,
   useCreateUserWithEmailAndPassword,
+  useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import auth from "../../../_firebase.init";
 const Registration = () => {
@@ -16,6 +17,7 @@ const Registration = () => {
   let navigate = useNavigate();
 
   let location = useLocation();
+  const [signInWithGoogle] = useSignInWithGoogle(auth);
 
   let from = location.state?.from?.pathname || "/";
   // const handleNameBlur = (e) => {
@@ -77,7 +79,11 @@ const Registration = () => {
       </Form>
       <p className="text-center">-----------------or--------------------</p>
 
-      <Button className="w-50 d-block m-auto" variant="primary">
+      <Button
+        onClick={() => signInWithGoogle()}
+        className="w-50 d-block m-auto"
+        variant="primary"
+      >
         Signin With Google
       </Button>
     </Container>

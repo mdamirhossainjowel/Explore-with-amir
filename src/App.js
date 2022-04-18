@@ -11,6 +11,7 @@ import Registration from "./Components/UserMenual/Registration/Registration";
 import Login from "./Components/UserMenual/Login/Login";
 import Booking from "./Components/ExploreWorld/Booking/Booking";
 import RequireAuth from "./Components/UserMenual/RequireAuth/RequireAuth";
+import PagenotFound from "./Components/PagenotFound/PagenotFound";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/usa" element={<USA></USA>}></Route>
 
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="*" element={<PagenotFound></PagenotFound>}></Route>
 
         <Route
           path="/booking"
