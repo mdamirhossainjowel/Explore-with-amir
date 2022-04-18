@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import {
+  useAuthState,
+  useCreateUserWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
 import auth from "../../../_firebase.init";
 const Registration = () => {
   // const [name, setName] = useState("");
@@ -9,10 +12,18 @@ const Registration = () => {
   const [password, setpassword] = useState("");
   const [createUserWithEmailAndPassword, error] =
     useCreateUserWithEmailAndPassword(auth);
+  const [user] = useAuthState(auth);
+  let navigate = useNavigate();
 
+  let location = useLocation();
+
+  let from = location.state?.from?.pathname || "/";
   // const handleNameBlur = (e) => {
   //   setName(e.target.value);
   // };
+  if (user) {
+    navigate(from, { replace: true });
+  }
   const handleEmailBlur = (e) => {
     setemail(e.target.value);
   };
@@ -64,6 +75,11 @@ const Registration = () => {
           Submit
         </Button>
       </Form>
+      <p className="text-center">-----------------or--------------------</p>
+
+      <Button className="w-50 d-block m-auto" variant="primary">
+        Signin With Google
+      </Button>
     </Container>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { Link, Navigate, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   useAuthState,
   useSignInWithEmailAndPassword,
@@ -8,11 +8,13 @@ import {
 import auth from "../../../_firebase.init";
 
 const Login = () => {
+  let navigate = useNavigate();
   let location = useLocation();
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
   const [user] = useAuthState(auth);
+  let from = location.state?.from?.pathname || "/";
 
   // const handleNameBlur = (e) => {
   //   setName(e.target.value);
@@ -28,7 +30,7 @@ const Login = () => {
     signInWithEmailAndPassword(email, password);
   };
   if (user) {
-    <Navigate to="/home" state={{ from: location }} replace />;
+    navigate(from, { replace: true });
   }
   return (
     <Container className="mt-5">
@@ -57,11 +59,12 @@ const Login = () => {
           Submit
         </Button>
       </Form>
-      <div className="mx-auto justify-content-center">
-        <p className="text-center">-----------------or--------------------</p>
 
-        <Button variant="primary">Signin With Google</Button>
-      </div>
+      <p className="text-center">-----------------or--------------------</p>
+
+      <Button className="w-50 d-block m-auto" variant="primary">
+        Signin With Google
+      </Button>
     </Container>
   );
 };
