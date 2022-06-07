@@ -46,7 +46,6 @@ const Header = () => {
             {user ? (
               <NavLink
                 className="text-decoration-none text-white"
-                eventKey={2}
                 to=""
                 onClick={() => signOut(auth)}
               >
@@ -55,7 +54,6 @@ const Header = () => {
             ) : (
               <NavLink
                 className="text-decoration-none text-white"
-                eventKey={2}
                 to="/login"
               >
                 Login

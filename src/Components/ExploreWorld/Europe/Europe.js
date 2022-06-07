@@ -21,7 +21,7 @@ const Europe = () => {
     },
     {
       id: 3,
-      image: "https://i.ibb.co/k2Lq0j2/images-22.jpg",
+      image: "https://i.ibb.co/pjrsP25/download.jpg",
       name: "Italy",
       days: " 2 Days",
       Price: "25000USD per Person",

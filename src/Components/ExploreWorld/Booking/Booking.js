@@ -3,7 +3,7 @@ import { Button, Container, Form } from "react-bootstrap";
 
 const Booking = () => {
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 mb-5">
       <Form className="w-50 mx-auto ">
         <h1 className="text-center">Booking</h1>
 

@@ -5,7 +5,7 @@ import amir from "../../Utilities/Images/Md. Amir Hossain Jowel.jpg";
 const About = () => {
   return (
     <Container>
-      <Card className="mt-5 mx-auto text-center" style={{ width: "18rem" }}>
+      <Card className="mt-5 mx-auto text-center mb-5" style={{ width: "18rem" }}>
         <Card.Img className="w-50 m-auto mt-2" variant="top" src={amir} />
         <Card.Body>
           <Card.Title>Md. Amir Hossain Jowel</Card.Title>

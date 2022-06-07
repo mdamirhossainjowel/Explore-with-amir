@@ -7,28 +7,28 @@ const Asia = () => {
   const countries = [
     {
       id: 1,
-      image: "https://i.ibb.co/kKbMjmZ/images-21.jpg",
+      image: "https://i.ibb.co/2kJwqsS/bangladesh-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg",
       name: "Bangladesh",
       days: " 2 Days",
       Price: "25000USD per Person",
     },
     {
       id: 2,
-      image: "https://i.ibb.co/k2Lq0j2/images-22.jpg",
+      image: "https://i.ibb.co/khw2vd7/Khao-Tapu-Ao-Phang-na-Thailand-National-Park.jpg",
       name: "Thailand",
       days: " 2 Days",
       Price: "35000USD per Person",
     },
     {
       id: 3,
-      image: "https://i.ibb.co/sKvK6xC/istockphoto-1145895508-2048x2048.jpg",
+      image: "https://i.ibb.co/Ykk4M7T/images-24.jpg",
       name: "China",
       days: " 2 Days",
       Price: "25000USD per Person",
     },
     {
       id: 4,
-      image: "https://i.ibb.co/qMBJKKM/usa-best-places-san-francisco.jpg",
+      image: "https://i.ibb.co/dPRb0xs/images-16.jpg",
       name: "Nepal",
       days: " 2 Days",
       Price: "25000USD per Person",

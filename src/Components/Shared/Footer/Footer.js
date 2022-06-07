@@ -1,11 +1,10 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <Container className="text-center">
-      <p>Copyright @2022</p>
-    </Container>
+    <div className="text-center bg-black mb-0">
+      <p className="text-white p-4  11">Copyright @2022</p>
+    </div>
   );
 };
 

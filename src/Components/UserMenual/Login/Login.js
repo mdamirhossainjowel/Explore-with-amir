@@ -41,7 +41,7 @@ const Login = () => {
   }
 
   return (
-    <Container className="mt-5">
+    <Container className="my-5">
       <Form onSubmit={handleSubmit} className="w-50 mx-auto ">
         <h1 className="text-center">Sign in</h1>
         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -65,8 +65,8 @@ const Login = () => {
 
         <Link to="/registration">new to EWA? Create Account</Link>
         <br />
-        <Button variant="primary" type="submit">
-          Submit
+        <Button variant="primary" type="submit" className="w-100 mt-1">
+          Login
         </Button>
       </Form>
 

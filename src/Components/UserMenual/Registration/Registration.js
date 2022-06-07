@@ -37,7 +37,7 @@ const Registration = () => {
     createUserWithEmailAndPassword(email, password);
   };
   return (
-    <Container className="mt-5">
+    <Container className="my-5">
       <Form onSubmit={handleSubmit} className="w-50 mx-auto ">
         <h1 className="text-center">Sign Up</h1>
         <Form.Group className="mb-3">
@@ -73,8 +73,8 @@ const Registration = () => {
         <Link to="/login">Already Have an Account?</Link>
         <br />
         <p>{error?.message}</p>
-        <Button variant="primary" type="submit">
-          Submit
+        <Button variant="primary" type="submit" className="w-100 mt-1">
+          Register
         </Button>
       </Form>
       <p className="text-center">-----------------or--------------------</p>
@@ -84,7 +84,7 @@ const Registration = () => {
         className="w-50 d-block m-auto"
         variant="primary"
       >
-        Signin With Google
+        Signup With Google
       </Button>
     </Container>
   );
