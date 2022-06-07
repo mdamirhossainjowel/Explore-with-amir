@@ -5,6 +5,9 @@ Live Site [Explore With Amir](https://explorewithamir-c33b7.firebaseapp.com/).
 ## Project Description
 
 - It is a Tourist Site where people can book for tour.
+- A travel lover can explore with Mr. Amir.
+- Traveler can choose the package of any side of world with expense.
+- Traveler have to create an account for booking.
 - You Can tour World wide like asia,europe,america.
 - Some Of Our Customer Review Also Added.
 - Every User have to create id for booking.
